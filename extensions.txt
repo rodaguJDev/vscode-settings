@@ -1,7 +1,0 @@
-enkia.tokyo-night
-ms-dotnettools.csdevkit
-ms-dotnettools.csharp
-ms-dotnettools.vscode-dotnet-runtime
-ms-dotnettools.vscodeintellicode-csharp
-ms-vsliveshare.vsliveshare
-vscodevim.vim
