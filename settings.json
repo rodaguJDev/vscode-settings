@@ -1,6 +1,4 @@
 {
-    "vim.statusBarColors.surroundinputmode": "",
-    "workbench.colorTheme": "Tokyo Night",
     "vim.leader": " ",
     "editor.lineNumbers": "relative",
     "editor.cursorSurroundingLines": 8,
@@ -18,7 +16,15 @@
         {
             "before": [ "<leader>", "y" ],
             "after": [ "\"", "+", "y" ]
-        }
+        },
+        {
+            "before": [ "<leader>", "d" ],
+            "after": [ "\"", "_", "d" ]
+        },
+        {
+            "before": [ "<leader>", "c" ],
+            "after": [ "\"", "_", "c" ]
+        },
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -29,35 +35,13 @@
             "before": [ "<leader>", "y" ],
             "after": [ "\"", "+", "y" ]
         },
-    ],
-    "vim.normalModeKeyBindings": [
         {
-            "before": [ "<leader>", "p", "f" ],
-            "commands": [ "workbench.action.quickOpen" ]
+            "before": [ "<leader>", "d" ],
+            "after": [ "\"", "_", "d" ]
         },
         {
-            "before": [ "<leader>", "p", "s" ],
-            "commands": [ "workbench.action.findInFiles" ]
+            "before": [ "<leader>", "c" ],
+            "after": [ "\"", "_", "c" ]
         },
-        {
-            "before": [ "<leader>", "p", "v" ],
-            "commands": [ "workbench.view.explorer" ]
-        },
-        {
-            "before": [ "g", "d" ],
-            "commands": [ "editor.action.revealDefinition" ]
-        },
-        {
-            "before": [ "g", "r" ],
-            "commands": [ "editor.action.goToReferences" ]
-        },
-        {
-            "before": [ "g", "t", "d" ],
-            "commands": [ "editor.action.goToTypeDefinition" ]
-        },
-        {
-            "before": [ "<leader>", "f", "d" ],
-            "commands": [ "editor.action.formatDocument" ]
-        }
     ],
 }
