@@ -1,47 +1,52 @@
 {
-    "vim.leader": " ",
-    "editor.lineNumbers": "relative",
-    "editor.cursorSurroundingLines": 8,
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [ "shift+k" ],
-            "commands": [ "editor.action.moveLinesUpAction" ],
-        },
-        {
-            "before": [ "shift+j" ],
-            "commands": [ "editor.action.moveLinesDownAction" ],
-        },
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [ "<leader>", "y" ],
-            "after": [ "\"", "+", "y" ]
-        },
-        {
-            "before": [ "<leader>", "d" ],
-            "after": [ "\"", "_", "d" ]
-        },
-        {
-            "before": [ "<leader>", "c" ],
-            "after": [ "\"", "_", "c" ]
-        },
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [ "J" ],
-            "after": [ "m", "z", "J", "`", "z" ]
-        },
-        {
-            "before": [ "<leader>", "y" ],
-            "after": [ "\"", "+", "y" ]
-        },
-        {
-            "before": [ "<leader>", "d" ],
-            "after": [ "\"", "_", "d" ]
-        },
-        {
-            "before": [ "<leader>", "c" ],
-            "after": [ "\"", "_", "c" ]
-        },
-    ],
+  "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "tailwindCSS.emmetCompletions": true,
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 8,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.foldfix": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["shift+k"],
+      "commands": ["editor.action.moveLinesUpAction"],
+      "silent": true
+    },
+    {
+      "before": ["shift+j"],
+      "commands": ["editor.action.moveLinesDownAction"],
+      "silent": true
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "after": ["m", "z", "J", "`", "z"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"],
+      "silent": true
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "a"],
+      "after": ["g", "g", "V", "G"]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
 }
